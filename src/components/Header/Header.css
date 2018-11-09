@@ -1,0 +1,36 @@
+.Header {
+}
+
+.Header-layout {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.Header-layout > * {
+  margin-right: 5px;
+}
+.Header-layout > *:last-child {
+  margin-right: 0;
+}
+
+header.Header-layout {
+  padding: 8px 5% 3px 5%;
+}
+
+.Header-layout-description {
+  flex: 1 1 auto;
+}
+
+h3.Header-layout-description {
+  font-weight: 500;
+  margin: 0;
+  color: green;
+  /*color: var(--passed-bg-color, green);*/
+}
+
+h3.Header-layout-description.failed {
+  color: red;
+  /*color: var(--failed-bg-color, red);*/
+}

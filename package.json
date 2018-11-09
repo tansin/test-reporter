@@ -1,0 +1,52 @@
+{
+  "name": "test-reporter",
+  "version": "1.0.1",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "jasmine": "^3.3.0",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "protractor": "^5.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-google-charts": "^3.0.8",
+    "react-moment": "^0.8.3",
+    "react-scripts": "2.0.5"
+  },
+  "peerDependencies": {
+    "protractor": ">= 5.x < 6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && yarn dist",
+    "test": "react-scripts test",
+    "jasmine": "jasmine",
+    "jasmine:debug": "node $NODE_DEBUG_OPTION node_modules/.bin/jasmine",
+    "dist": "node -e \"del=require('del'); del.sync('dist'); require('fs-extra').copySync('build', 'dist'); del.sync(['dist/*.js*', 'dist/**/*.map'])\""
+  },
+  "homepage": "./",
+  "files": [
+    "dist",
+    "jasmine"
+  ],
+  "main": "index.js",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "license": "MIT",
+  "author": "Maxim Tansin",
+  "keywords": [
+    "test",
+    "reporter",
+    "html",
+    "jasmine",
+    "protractor"
+  ]
+}

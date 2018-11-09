@@ -1,0 +1,16 @@
+.Charts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Chart {
+  flex: 1 1 auto;
+  margin-bottom: 18px;
+  width: 435px;
+  height: 270px;
+}
+
+.Chart.suite {
+  margin-right: 35px;
+}

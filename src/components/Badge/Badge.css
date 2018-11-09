@@ -1,0 +1,33 @@
+.Badge {
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0.2em  0.6em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.Badge.passed {
+  background-color: var(--passed-bg-color, green);
+}
+
+.Badge.failed {
+  background-color: var(--failed-bg-color, red);
+}
+
+.Badge.pending,
+.Badge.excluded {
+  background-color: var(--ignored-bg-color, orange);
+}
+
+.Badge.stopwatch {
+  background-color: var(--info-bg-color, blue);
+}
+
+header .Badge {
+  font-size: 19px;
+  padding: 0.5em;
+  margin-bottom: 5px;
+}
