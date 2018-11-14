@@ -1,4 +1,5 @@
 const Reporter = require('../jasmine/reporter');
+const path = require('path');
 
 describe('Reporter', () => {
   describe('used without options', () => {
@@ -20,7 +21,7 @@ describe('Reporter', () => {
     it('writes empty report using default file name', () => {
       reporter.jasmineDone();
       expect(options.writeFn).toHaveBeenCalledWith(
-        'testresults/report.json',
+        path.join('testresults', 'report.json'),
         jasmine.objectContaining({suites: [], specs: []}),
         {spaces: 2}
       );

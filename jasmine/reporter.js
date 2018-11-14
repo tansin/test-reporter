@@ -78,7 +78,7 @@ function Reporter(optionsParam) {
 
 
   function extendJasmineDescribe() {
-    if (global.__originalDescribe || options.shouldNotReportSpecPath)
+    if (global.__originalDescribe || options.shouldNotReportSpecPath || !jasmine)
       return;
 
     global.__originalDescribe = describe;

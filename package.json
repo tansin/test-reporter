@@ -22,7 +22,6 @@
     "build": "react-scripts build && yarn dist",
     "test": "react-scripts test",
     "jasmine": "jasmine",
-    "jasmine:debug": "node $NODE_DEBUG_OPTION node_modules/.bin/jasmine",
     "dist": "node -e \"del=require('del'); del.sync('dist'); require('fs-extra').copySync('build', 'dist'); del.sync(['dist/*.js*', 'dist/**/*.map'])\""
   },
   "homepage": "./",

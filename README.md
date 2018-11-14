@@ -3,6 +3,8 @@
 Jasmine custom reporter which generates hierarchical HTML report.
 When used with Protractor, it takes screenshots on failure.
 
+## Development
+
 ### Installation
 
 `yarn install`
@@ -20,6 +22,21 @@ Jasmine custom reporter should be tested first:
 Then you can start html reporter which consumes the jasmine json report:
 
 `yarn start`
+
+## Usage
+
+test-reporter can be used like any Jasmine custom reporter
+(https://jasmine.github.io/tutorials/custom_reporter):
+
+```javascript
+const reporter = require('./jasmine/reporter');
+jasmine.getEnv().addReporter(reporter({
+  reportDirPath: 'path/to/report/dir',
+  metadata: {
+    title: 'Report Title'
+  }
+}))
+```  
 
 ## Acknowledgment
 
