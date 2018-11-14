@@ -1,6 +1,6 @@
 {
   "name": "test-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "devDependencies": {
     "del": "^3.0.0",
     "fs-extra": "^7.0.1",
@@ -8,11 +8,11 @@
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "protractor": "^5.4.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-google-charts": "^3.0.8",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-google-charts": "^3.0.10",
     "react-moment": "^0.8.3",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.1.1"
   },
   "peerDependencies": {
     "protractor": ">= 5.x < 6"
